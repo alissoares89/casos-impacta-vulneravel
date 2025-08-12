@@ -67,3 +67,20 @@ O objetivo principal é servir como um ambiente de teste e demonstração para a
 
 Este projeto visa fornecer um exemplo prático e funcional de como vulnerabilidades comuns podem ser exploradas e como uma solução de WAF como o Azure WAF pode ser configurada para proteger aplicações web contra esses ataques.
 
+
+## Testes
+
+Para executar a suíte de testes é necessário ter o [PHPUnit](https://phpunit.de/) instalado.
+Com o PHPUnit disponível no sistema, basta rodar na raiz do projeto:
+
+```
+phpunit
+```
+
+Caso o PHPUnit tenha sido instalado via Composer, utilize:
+
+```
+./vendor/bin/phpunit
+```
+
+Os testes estão localizados no diretório `tests/`.

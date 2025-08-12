@@ -22,20 +22,18 @@ O objetivo principal é servir como um ambiente de teste e demonstração para a
 ├── /admin
 │   ├── painel.php           # Painel administrativo simulado (vulnerável a CSRF)
 │   └── processar_acao.php   # Processa a ação do painel (sem token CSRF)
-├── /assets
-│   └── style.css            # Arquivo CSS básico (a ser criado se necessário)
 ├── /db
 │   ├── db_config.php        # Configuração da conexão com o BD (lê variáveis de ambiente)
 │   └── init.sql             # Script SQL para inicializar o banco de dados
 ├── /docs
 │   ├── manual_instalacao.md # Manual detalhado para implantação no Azure e configuração/teste do WAF
-│   └── referencias.docx     # Referências técnicas utilizadas (formato acadêmico)
+│   ├── referencias.docx     # Referências técnicas utilizadas (formato acadêmico)
+│   └── referencias.txt      # Versão em texto das referências
 ├── /public
 │   ├── index.php            # Página inicial, lista artigos
 │   ├── artigo.php           # Exibe um artigo e seus comentários (exibição vulnerável a XSS)
 │   ├── comentario.php       # Processa o envio de comentários (armazena XSS)
-│   ├── login.php            # Formulário e processamento de login (vulnerável a SQL Injection)
-│   └── logout.php           # Script simples para encerrar a sessão
+│   └── login.php            # Formulário e processamento de login (vulnerável a SQL Injection)
 └── README.md                # Este arquivo
 ```
 
